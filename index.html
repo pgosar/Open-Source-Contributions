@@ -1,17 +1,15 @@
-<!DOCTYPE html>
 <!-- ↑ Doing this just for fun ↑ -->
 <html>
   <head> 
     <title>Open Source Calculator</title>
+    <comment>This calculator was created and fixed for educational purposes</comment>
     <meta name="description" content="An open source calculator that *may* have a few problems" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
     <h1>Open Source Calculator</h1>
-    <h2>A revolution in <a href="https://en.wikipedia.org/wiki/Horse_breeding">calculatory</a> calclations</h2>
-
-    <div id="peskygreendot"></div> <!-- credit to Henry Castillo for unleashing this demon upon humankind -->
+    <h2>A revolution in <a href="https://en.wikipedia.org/wiki/Calculator">calculatory</a> calculations</h2>
 
     <form name="calculator">
       <table>
@@ -28,10 +26,10 @@
             <input type="button" name="two" value="2" onclick="calculator.display.value += '2'"/>
           </td>
           <td>
-            <input type="button" name="three" value="3" onclick="calculator.display.value += '𓀂'"/>
+            <input type="button" name="three" value="3" onclick="calculator.display.value += '3'"/>
           </td>
           <td>
-<input type="button" name="plus" value="+" onclick="calculator.display.value += '+'"/>
+            <input type="button" name="plus" value="+" onclick="calculator.display.value += '+'"/>
           </td>
         </tr>
         <tr class="buttonrow">
@@ -50,16 +48,16 @@
         </tr>
         <tr class="buttonrow">
           <td>
-            <input type="button" name="seven" value="7" onclick="calculator.display.value += '8'"/>
+            <input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"/>
           </td>
           <td>
-            <input type="button" name="eight" value="𝟪" onclick="calculator.display.value += '7'"/>
+            <input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"/>
           </td>
           <td>
             <input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"/>
           </td>
           <td>
-            <input type="button" name="times" value="*" onclick="calculator.display.value += '*'"/>
+            <input type="button" name="times" value="*" onclick="calculator.display.value += 'x'"/>
           </td>
         </tr>
         <tr class="buttonrow">
@@ -73,14 +71,13 @@
             <input type="button" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)"/>
           </td>
           <td>
-            <input type="button" name="divide" value="/" onclick="calculator.display.value += '/'"/>
+            <input type="button" name="divide" value="/" onclick="calculator.display.value += '÷'"/>
           </td>
         </tr>
       </table>
     </form>
     <footer>
-      © 2020 covfefe corp. ☕️
+      © 2020 covfefe corp. ☕
     </footer>
-    <span id="useless span" style="display: none;">I'm just existing!</span>
   </body>
 </html>
