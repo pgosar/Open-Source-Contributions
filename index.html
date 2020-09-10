@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <!-- ↑ Doing this just for fun ↑ -->
 <html>
-  <head> 
-    <title>Open Source Calculator</title>
-    <meta name="description" content="An open source calculator that *may* have a few problems" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <h1>Open Source Calculator</h1>
-    <h2>A revolution in <a href="https://en.wikipedia.org/wiki/Horse_breeding">calculatory</a> calclations</h2>
+<head>
+  <title>Open Source Calculator</title>
+  <meta name="description" content="An open source calculator that *may* have a few problems" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-    <div id="peskygreendot"></div> <!-- credit to Henry Castillo for unleashing this demon upon humankind -->
+<body>
+  <h1>Open Source Calculator</h1>
+  <h2>A revolution in <a href="https://en.wikipedia.org/wiki/Horse_breeding">calculatory</a> calclations</h2>
 
-    <form name="calculator">
-      <table>
-        <tr id="displayrow">
-          <td colspan="4">
-            <input type="text" name="display" id="display" disabled />
-          </td>
-        </tr>
-        <tr class="buttonrow">
-          <td>
-            <input type="button" name="one" value="1" onclick="calculator.display.value += '1'"/>
-          </td>
-          <td>
-            <input type="button" name="two" value="2" onclick="calculator.display.value += '2'"/>
-          </td>
-          <td>
-            <input type="button" name="three" value="3" onclick="calculator.display.value += '𓀂'"/>
-          </td>
-          <td>
-<input type="button" name="plus" value="+" onclick="calculator.display.value += '+'"/>
-          </td>
-        </tr>
-        <tr class="buttonrow">
-          <td>
-            <input type="button" name="four" value="4" onclick="calculator.display.value += '4'"/>
-          </td>
-          <td>
-            <input type="button" name="five" value="5" onclick="calculator.display.value += '5'"/>
-          </td>
-          <td>
-            <input type="button" name="six" value="6" onclick="calculator.display.value += '6'"/>
-          </td>
-          <td>
-            <input type="button" name="minus" value="-" onclick="calculator.display.value += '-'"/>
-          </td>
-        </tr>
-        <tr class="buttonrow">
-          <td>
-            <input type="button" name="seven" value="7" onclick="calculator.display.value += '8'"/>
-          </td>
-          <td>
-            <input type="button" name="eight" value="𝟪" onclick="calculator.display.value += '7'"/>
-          </td>
-          <td>
-            <input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"/>
-          </td>
-          <td>
-            <input type="button" name="times" value="*" onclick="calculator.display.value += '*'"/>
-          </td>
-        </tr>
-        <tr class="buttonrow">
-          <td>
-            <input type="button" name="clear" value="c" onclick="calculator.display.value = ''"/>
-          </td>
-          <td>
-            <input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"/>
-          </td>
-          <td>
-            <input type="button" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)"/>
-          </td>
-          <td>
-            <input type="button" name="divide" value="/" onclick="calculator.display.value += '/'"/>
-          </td>
-        </tr>
-      </table>
-    </form>
-    <footer>
-      © 2020 covfefe corp. 🇺🇸
-    </footer>
-    <span id="useless span" style="display: none;">I'm just existing!</span>
-  </body>
+  <div id="peskygreendot"></div> <!-- credit to Henry Castillo for unleashing this demon upon humankind -->
+
+  <form name="calculator">
+    <table>
+      <tr id="displayrow">
+        <td colspan="4">
+          <input type="text" name="display" id="display" disabled />
+        </td>
+      </tr>
+      <tr class="buttonrow">
+        <td>
+          <input type="button" name="one" value="1" onclick="calculator.display.value += '1'" />
+        </td>
+        <td>
+          <input type="button" name="two" value="2" onclick="calculator.display.value += '2'" />
+        </td>
+        <td>
+          <input type="button" name="three" value="3" onclick="calculator.display.value += '𓀂'" />
+        </td>
+        <td>
+          <input type="button" name="plus" value="+" onclick="calculator.display.value += '+'" />
+        </td>
+      </tr>
+      <tr class="buttonrow">
+        <td>
+          <input type="button" name="four" value="4" onclick="calculator.display.value += '4'" />
+        </td>
+        <td>
+          <input type="button" name="five" value="5" onclick="calculator.display.value += '5'" />
+        </td>
+        <td>
+          <input type="button" name="six" value="6" onclick="calculator.display.value += '6'" />
+        </td>
+        <td>
+          <input type="button" name="minus" value="-" onclick="calculator.display.value += '-'" />
+        </td>
+      </tr>
+      <tr class="buttonrow">
+        <td>
+          <input type="button" name="seven" value="7" onclick="calculator.display.value += '7'" />
+        </td>
+        <td>
+          <input type="button" name="eight" value="𝟪" onclick="calculator.display.value += '8'" />
+        </td>
+        <td>
+          <input type="button" name="nine" value="9" onclick="calculator.display.value += '9'" />
+        </td>
+        <td>
+          <input type="button" name="times" value="*" onclick="calculator.display.value += '*'" />
+        </td>
+      </tr>
+      <tr class="buttonrow">
+        <td>
+          <input type="button" name="clear" value="c" onclick="calculator.display.value = ''" />
+        </td>
+        <td>
+          <input type="button" name="zero" value="0" onclick="calculator.display.value += '0'" />
+        </td>
+        <td>
+          <input type="button" name="equals" value="="
+            onclick="calculator.display.value = eval(calculator.display.value)" />
+        </td>
+        <td>
+          <input type="button" name="divide" value="/" onclick="calculator.display.value += '/'" />
+        </td>
+      </tr>
+    </table>
+  </form>
+  <footer>
+    © 2020 covfefe corp. 🇺🇸
+  </footer>
+  <span id="useless span" style="display: none;">I'm just existing!</span>
+</body>
+
 </html>
